@@ -1,0 +1,75 @@
+html {
+    font-size: 0.625em;  /* set 1 rem = 16px * 0.625 = 10px */
+}
+
+* {
+    box-sizing: border-box; /* width and height include paddings and borders /
+    margin: 0; / wipe out browser differences /
+    padding: 0; / wipe out browser differences */ 
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 100rem;
+}
+
+ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+button:hover {
+    transition: 0.2s;
+    background-color: #000;
+    color: #FFF;
+}
+
+.sliderclass {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+#slider {
+    min-width: 40rem; 
+}
+
+#label, #sliderOutput {
+    font-size: 2rem;
+}
+
+.gray {
+	filter: grayscale(100%);
+}
+
+.hue {
+	filter: hue-rotate(90deg);
+}
+
+.sepia {
+	filter: sepia(100%);
+}
+
+.blur {
+	filter: blur(400px);
+}
+
+.normal {
+	filter: none;
+}
