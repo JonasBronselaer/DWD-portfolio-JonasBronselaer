@@ -40,18 +40,18 @@ button:hover {
     color: #FFF;
 }
 
+#slider {
+    min-width: 24rem; 
+}
+
 .sliderclass {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
 }
 
-#slider {
-    min-width: 40rem; 
-}
-
-#label, #sliderOutput {
-    font-size: 2rem;
+#opacity, #sliderOutput {
+    font-size: 1.4rem;
 }
 
 .gray {

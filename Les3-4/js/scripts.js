@@ -14,6 +14,9 @@
 			pepebus.classList.remove('hue');
 			pepebus.classList.remove('blur');
 		}
+		let sliderOutput = document.querySelector('#sliderOutput');
+        let slider = document.querySelector('#slider');
+
 		btnNormal.addEventListener('click', function() {
 			console.log('ok');
 			reset();
@@ -39,3 +42,7 @@
 			reset();
 			pepebus.classList.add('blur');
 		});
+        slider.addEventListener('input', function() {
+            sliderOutput.innerHTML = (Math.round(slider.value * 100)) + "%";
+            pepebus.style.opacity = this.value
+        });
