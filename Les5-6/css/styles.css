@@ -106,6 +106,10 @@ body {
     Filters
     =========================================== */
 
+.hide {
+    display: none;
+}
+
 .page__filters {
     background-color: #00BCD4;
     margin: 2em auto;
